@@ -1,0 +1,265 @@
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+body:after {
+    content:'\A';
+    position:absolute;
+    width:100%; 
+    height:100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.4);
+    opacity:1;
+    z-index: -1;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body:hover:after {
+    opacity:0;
+}
+
+a {
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+
+header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+header .header-icons-container {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #47cfac;
+    background-color: transparent;
+
+}
+header .header-icons-container .icons {
+    margin-top: 20px;
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: end;
+    margin-right: 50px;
+}
+
+header .header-icons-container .icons span {
+    color: white;
+}
+
+.icon-container img{
+    width: 30px;
+    height: 30px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+.nav-logo-container {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo-container a {
+    width: 220px;
+    font-size: 2.3rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: white;
+    margin-top: 10px;
+}
+.profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.profile-link a {
+    font-size: 1.2rem;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+
+/*********** Seccion de los blogs ***********************************************/
+
+.blogs-main {
+    display: grid;
+}
+
+.blogs-news-container {
+    background-color: black;
+    padding: 0 200px 80px;
+}
+
+.blogs-main-new {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 2fr;
+}
+
+.blogs-news-img-container {
+    width: 100%;
+    grid-column: 1;
+}
+
+.blogs-news-img-container img {
+    width: 90%;
+}
+
+.blogs-news-info-container {
+    grid-column: 2;
+}
+.blogs-news-info-container h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+.blogs-news-info-container p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 55px;
+}
+
+.blogs-button-white {
+    padding: 15px 20px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    border-radius: 30px;
+    font-size: 1.2rem;
+}
+
+.blogs-posts-container {
+    padding: 0 200px 40px;
+}
+
+.grid-container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.blogs-posts-container h3 {
+    font-size: 2.2rem;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.blogs-posts-container .post-container {
+    display: inline-block;
+    padding-left: 30px;
+    max-width: 30%;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.blogs-posts-container .post-container p {
+    margin-bottom: 35px;
+}
+
+.blogs-posts-container .post-container img {
+    width: 100%;
+}
+
+.blogs-posts-container .post-container a {
+    padding: 10px 15px;
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    font-size: 0.9rem;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
+footer p {
+    padding: 0 200px 40px;
+    margin-top: 30px;
+    color: white;
+}
+
+
+/* Este es el blog */
+
+
+.grid-container {
+    max-width: 1300px;
+}
+
+.blogpost-img-container {
+    padding: 0 100px 40px;
+}
+.blogpost-img-container img {
+    width: 100%;
+}
+.blogpost-main-container {
+    color: white;
+    padding: 0 100px 40px;   
+}
+
+.blogpost-main-container h3 {
+    font-size: 1.8rem;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+
+
+.blogpost-main-container h2{
+    font-size: 2.5rem;
+}
+.blogpost-main-container p {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    line-height: 2rem;
+}
+
+
+/*Peril */
+
+.blog-perfil-main {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 2fr;
+}
+
+.blogs-perfil-img-container  {
+    width: 100%;
+    grid-column: 1;
+}
+
+.blogs-perfil-img-container img{
+    width: 90%;
+    background-size: cover;
+    border-radius: 5px;
+}

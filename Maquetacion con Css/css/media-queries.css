@@ -1,0 +1,68 @@
+/*Index */
+
+@media (max-width: 800px) {
+    header .header-icons-container .icons {
+        justify-self: center;
+    }
+}
+
+/* Vista de los blogs.html */
+@media (max-width: 1230px) {
+    .blogs-news-container {
+        background-color: black;
+        padding: 0 150px 80px;
+    }
+    .blogs-posts-container {
+        padding: 0 150px 40px;
+    }
+    .blogs-main-new {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+    }
+    .blogs-news-img-container {
+        grid-row: 2;
+    }
+    .blogs-news-info-container {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .blogs-posts-container .post-container {
+        max-width: 45%;
+    }
+
+}
+
+@media (max-width: 1500px) {
+    .blogs-posts-container .post-container {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 800px) {
+    .blogs-posts-container .post-container {
+        max-width: 95%;
+    }
+    .blogs-news-container {
+        background-color: black;
+        padding: 0 50px 40px;
+    }
+    .blogs-posts-container {
+        padding: 0 50px 40px;
+    }
+    footer p {
+        padding: 0 50px 40px;
+    }
+}
+
+
+/* Vista del blog */
+
+@media (max-width: 1230px) {
+    .blog-perfil-main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+    }
+    .blogs-perfil-img-container {
+        grid-row: 2;
+    }
+}
